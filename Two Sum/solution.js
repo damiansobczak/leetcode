@@ -7,7 +7,6 @@ function twoSum(nums, target) {
     }
     map.set(nums[i], i);
   }
-  return map;
 }
 
 console.log(twoSum([0, 2, 7, 15], 9));
