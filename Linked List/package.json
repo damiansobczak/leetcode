@@ -1,0 +1,17 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "Create linked list. This task is not part of a leetcode program.",
+  "main": "solution.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel solution.js -d lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
