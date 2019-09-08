@@ -1,10 +1,10 @@
 var reverse = function(x) {
-  const charArray = x.toString().split("");
-  const isNegative = charArray.indexOf("-");
-  if (isNegative !== -1) {
-    charArray.splice(isNegative, isNegative + 1);
-    charArray.reverse().unshift("-");
-    return charArray.join("");
+  const number = String(Math.abs(x))
+    .split("")
+    .reverse()
+    .join("");
+  if (number > 0x7fffffff) {
+    return 0;
   }
-  return charArray.reverse().join("");
+  return x < 0 ? -number : number;
 };
